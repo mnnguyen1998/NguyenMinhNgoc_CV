@@ -1,0 +1,412 @@
+/* 
+1. từ ngoài vào trong
+2. từ trên xuống dưới
+3. từ tổng quan đến chi tiết
+
+1. vị trí
+2. kích thước
+3. màu sắc
+4. kiểu dáng
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* common */
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third{
+    width:33.33333%;
+}
+
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+
+
+.clear{
+    clear: both;
+}
+
+.text-white{
+    color:#ffffff !important; 
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+.mt-8{
+    margin-top: 8px;
+}
+
+/* end common */
+
+/* main */
+#main{
+
+}
+#header{
+    position: fixed;
+    height: 46px;
+    background-color: #000000;
+    width: 100%;
+    top:0;
+    z-index: 1;
+}
+
+#nav{
+    position:relative;
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav > li > a{
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+#nav li a{
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: #000000;
+    background-color: #cccccc;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top: 46px;
+    left: 0;
+    background-color: #ffffff;
+}
+
+#nav .subnav a{
+    color: black;
+    padding:0 12px;
+    line-height: 38px;
+    min-width: 160px;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .icon-down{
+    font-size: 12px;
+}
+
+#header .mobile-menu-btn{
+    display: none;
+}
+
+#header .mobile-menu-btn,
+#header .searchi{
+    position: absolute;
+    right:0;
+    line-height: 46px;
+    padding: 0 24px;
+    top:0;
+}
+#header .menu-icon,
+#header .searchi .search-icon{
+    color: #ffffff;
+}
+#header .searchi:hover{
+    color: #ffffff;
+    background-color: #f44336;
+}
+
+#header .mobile-menu-btn:hover{  
+    background-color: #cccccc;   
+}
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000000;
+}
+
+/* slider section */
+#slider{
+    position: relative;
+    margin-top: 46px; 
+}
+
+#slider-img img{
+    width: 100%;
+    text-align: center; 
+}
+#slider .slider-text{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: -120px;
+}
+
+#slider .slider-heading{
+    color:#ffffff;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+#slider .slider-heading2{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0 0 1px #000;
+}
+/* end slider */
+
+/* content section */
+#content{
+
+}
+
+/* content about */
+#content .content-about{
+    width:800px;
+    max-width: 100%;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#content .content-heading{
+    font-size: 30px;
+    font-weight: 300;
+    margin: 10px 0;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#content .content-sub-heading{
+    opacity: 0.7;
+    font-size: 15px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+#content .content-about-text{
+    font-size: 15px;
+    margin: 15px 0px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#content .member-list{
+    padding: 16px 0px;
+}
+.member-name{
+    margin:15px 0;
+    font-size: 15px;
+}
+
+#content .member-img{
+    width: 154px;
+    border-radius: 4px;
+}
+/* end about section */
+
+/* content tour */
+#tour-section{
+    background-color: #000000;
+}
+
+.tickets-list{
+    background-color: #ffffff;
+    color: #757575;
+    margin-top: 40px;
+}
+
+.tickets-list li{
+    padding: 10px 16px;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+    list-style-type: none;
+}
+
+.tickets-list .sold-out{
+    margin-left: 18px;
+    background-color: #f44336;
+    padding: 3px 5px;
+    color: white;
+}
+
+.tickets-list .number{
+    float:right;
+    color: #ffffff;
+    background-color: #000000;
+    font-size: 15px;
+    padding: 3px 7px;
+    border-radius: 50%;
+    margin-top: -2px;
+    margin-right: 10px;
+}
+
+#tour-section .tour-list{
+    padding: 16px 0px;
+}
+
+.tour-img{
+    width: 100%;  
+}
+
+.tour-img:hover{
+    opacity:0.7;
+}
+
+.tour-text{
+    font-size: 15px;
+    padding: 0.15px 16px;
+    background-color: #ffffff;
+}
+
+.tour-text .tour-name{
+    margin: 15px 0;
+    font-weight: bolder;
+}
+
+.tour-text .tour-time{
+    font-size: 15px;
+    margin: 15px 0;
+    opacity: 0.6;
+}
+
+.tour-descript{
+    font-size: 15px;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.tour-btn{
+    padding: 8px 16px;
+    background-color: #000000;
+    margin-bottom: 16px;
+    border: none;
+}
+
+.tour-text .tour-btn:hover{
+    color:#000000;
+    background-color: #cccccc;
+}
+
+/* CONTENT CONTACT */
+
+.content-contact{
+    padding: 32px 0px;
+}
+.contact-info{
+    font-size:18px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.contact-info i{
+    width: 30px;
+    display: inline-block;
+}
+
+
+.contact-form{
+    font-size: 15px;
+}
+.contact-form .form-input{
+   padding: 8px;
+   border: #cccccc solid 1px;
+   width: 100%;
+}
+
+.contact-form .contact-btn{
+    padding: 12px 15px;
+    background-color: #000000;
+    color:#ffffff;
+    border: 1px solid #000000;
+    float: right;
+    appearance: none;
+    -webkit-appearance:none;
+}
+
+.contact-form .contact-btn:hover{
+    cursor: pointer;
+    background-color: #cccccc;
+}
+
+/* map-section */
+.map-section img{
+    width:100%;
+}
+
+/* footer */
+#footer{
+    padding: 64px 16px;
+    font-size: 22px;
+    opacity: 0.6;
+}
+
+.socials-list > a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.socials-list > a:hover{
+    opacity: 0.4;
+}
+
+.socials-list .fo-text{
+    margin-top: 25px;
+    font-size: 14px;
+}
+.socials-list .fo-link{
+    color: #000000;
+}
+
+
+
