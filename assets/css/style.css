@@ -1,15 +1,5 @@
-/* 
-1. từ ngoài vào trong
-2. từ trên xuống dưới
-3. từ tổng quan đến chi tiết
 
-1. vị trí
-2. kích thước
-3. màu sắc
-4. kiểu dáng
-*/
-
-
+/* reset css */
 *{
     margin: 0;
     padding: 0;
@@ -76,6 +66,7 @@ html{
 #main{
 
 }
+/* header */
 #header{
     position: fixed;
     height: 46px;
@@ -170,6 +161,7 @@ html{
 #header .mobile-menu-btn:hover .menu-icon{
     color: #000000;
 }
+/* end header */
 
 /* slider section */
 #slider{

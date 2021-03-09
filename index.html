@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
 </head>
 <body>
+    <!-- HEADER -->
     <div id="header">
         <!-- begin - nav -->
         <ul id="nav">
@@ -35,8 +36,9 @@
             <i class="menu-icon ti-menu"></i>
         </div>
     </div>
+    <!-- END HEADER -->
     
-
+    <!-- end slider -->
     <div id="slider">
         <div id="slider-img">
             <img src="./assets/img/slider.jpg" alt="">
@@ -46,8 +48,10 @@
             <p class="slider-heading2">Thank you, Chicago - A night we won't forget.</p>
         </div>
     </div>
-    <!-- content about -->
+
+    <!-- content -->
     <div id="content">
+        <!-- about section -->
         <div id="band" class="content-about">
             <h2 class="content-heading">THE BAND</h2>
             <p class="content-sub-heading"><i>we love music</i></p>
@@ -68,8 +72,9 @@
                 </div>
             </div>
         </div>
+        <!-- about content -->
 
-       <!-- content section -->
+       <!-- tour section-->
        <div id="tour-section">
            <div id="tour" class="content-about">
                <h2 class="content-heading text-white">TOUR DATES</h2>
@@ -111,12 +116,12 @@
                 </div>
             </div>
        </div>
+       <!-- end tour section -->
        <!-- CONTENT CONTACT -->
        <div id="contact-section">
            <div id="contact" class="content-about">
                <h2 class="content-heading">CONTACT</h2>
                <p class="content-sub-heading"><i>Fan? Drop a note!</i></p>
-
                    <div class="row content-contact">
                        <div class="col col-half s-col-full contact-info">
                             <p><i class="ti-location-pin"></i>Chicago, USfu</p>
@@ -146,11 +151,13 @@
            
        </div>
        <!-- end contact content -->
+
+       <!-- map -->
        <div class="map-section">
            <img src="./assets/img/map.jpg" alt="map">
        </div> 
     </div>
-
+    <!-- footer -->
     <div id="footer">
         <div class="socials-list text-center">
             <a href=""><i class="ti-facebook"></i></a>
@@ -163,6 +170,7 @@
         </div>
     </div>
 
+    <!-- script -->
     <script>
         var header = document.getElementById('header');
         var headerMenu = document.getElementById('mobile-menu');
@@ -191,13 +199,9 @@
                 }
                 else{
                     header.style.height = null;    
-                }
-                
-                
+                }      
             }
         }
     </script>
-
-
 </body>
 </html>
